@@ -232,7 +232,6 @@ class OpenAIAssistantAgent(BaseAgent):
             instructions=instructions,
             tools=cast(List[Any], all_openai_tools),
             model=model,
-            file_ids=all_file_ids,
         )
         return cls(
             client,
